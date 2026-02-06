@@ -9,6 +9,7 @@ public class Tecniche{
         return categoria;
     }
 
+
     public void setcategoria(String categoria) {
         this.categoria = categoria;
     }
@@ -30,6 +31,10 @@ public class Tecniche{
     }
 
 
+
+
+
+
     public Tecniche(String categoria, String nomeDellaTecnica, int difficolta) {
         this.categoria = categoria;
         this.nomeDellaTecnica = nomeDellaTecnica;
@@ -37,5 +42,12 @@ public class Tecniche{
     }
 
 
-
+    @Override
+    public String toString() {
+        return "Tecniche{" +
+                "nomeDellaTecnica='" + nomeDellaTecnica + '\'' +
+                ", categoria='" + categoria + '\'' +
+                ", difficolta=" + difficolta +
+                '}';
+    }
 }

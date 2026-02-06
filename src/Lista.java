@@ -27,8 +27,27 @@ public class Lista {
     }
 
 
+    public void ordinamentoPerFifficolta(Tecniche tecnica) {
+
+        Nodo newNode = new Nodo(tecnica);
+
+        if (head == null || tecnica.getDifficolta() < head.getTecnica().getDifficolta()) {
+            newNode.setNext(head);
+            head = newNode;
+        } else {
+            Nodo current = head;
+            while (current.getNext() != null && current.getNext().getTecnica().getDifficolta() < tecnica.getDifficolta()) {
+                current = current.getNext();
+                newNode.setNext(current.getNext());
+                current.setNext(newNode);
+            }
+
+            size++;
 
 
-
-
+        }
+    }
 }
+
+
+

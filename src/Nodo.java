@@ -22,6 +22,13 @@ public class Nodo {
     }
 
 
+    public Tecniche getTecnica() {
+        return tecnica;
+    }
+
+    public void setTecnica(Tecniche tecnica) {
+        this.tecnica = tecnica;
+    }
 
     @Override
     public String toString() {
