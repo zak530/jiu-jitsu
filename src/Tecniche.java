@@ -30,24 +30,22 @@ public class Tecniche{
         this.difficolta = difficolta;
     }
 
-
-
-
-
-
     public Tecniche(String categoria, String nomeDellaTecnica, int difficolta) {
         this.categoria = categoria;
         this.nomeDellaTecnica = nomeDellaTecnica;
         this.difficolta = difficolta;
     }
 
+    public int compareTo(Tecniche t) {
+        if (this.difficolta < t.difficolta)
+            return -1;
+        else if (this.difficolta == t.difficolta)
+            return 0;
+        else
+            return 1;
+    }
 
-    @Override
     public String toString() {
-        return "Tecniche{" +
-                "nomeDellaTecnica='" + nomeDellaTecnica + '\'' +
-                ", categoria='" + categoria + '\'' +
-                ", difficolta=" + difficolta +
-                '}';
+        return nomeDellaTecnica + " - " + categoria + " - " + difficolta;
     }
 }

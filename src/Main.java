@@ -11,16 +11,19 @@ public class Main{
         Lista lista1 = new Lista();
 
         lista1.ordinamentoPerFifficolta(americana);
+        lista1.ordinamentoPerFifficolta(triangolo);
+        lista1.ordinamentoPerFifficolta(leva);
         lista1.ordinamentoPerFifficolta(rnc);
         lista1.ordinamentoPerFifficolta(kimura);
-        lista1.ordinamentoPerFifficolta(triangolo);
 
-        Nodo current = lista1.getHead();
-        while (current != null) {
-            System.out.println(current.getTecnica());
-            current = current.getNext();
-        }
 
+        //Nodo current = lista1.getHead();
+        //while (current != null) {
+        //    System.out.println(current.getTecnica());
+        //    current = current.getNext();
+        //}
+
+        lista1.stampa();
 
 
 

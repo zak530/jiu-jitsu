@@ -1,7 +1,7 @@
 public class Nodo {
 
-    private Tecniche tecnica;
-    private Nodo next;
+    public Tecniche tecnica;
+    public Nodo next;
 
 
     public Nodo(Tecniche tecnica, Nodo next) {
@@ -32,8 +32,9 @@ public class Nodo {
 
     @Override
     public String toString() {
-        return tecnica.toString();
-
+        return "Nodo{" +
+                "tecnica=" + tecnica +
+                ", next=" + next +
+                '}';
     }
-
 }
