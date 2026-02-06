@@ -26,7 +26,6 @@ public class Lista {
         this.cursor = cursor;
     }
 
-
     //public void ordinamentoPerFifficolta(Tecniche tecnica) {
 //
     //    Nodo newNode = new Nodo(tecnica, null);
@@ -77,6 +76,10 @@ public class Lista {
     }
 
 
+
+    public Iteratore getIteratore() {
+        return new Iteratore(this.head);
+    }
 
 
 
